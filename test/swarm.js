@@ -17,9 +17,9 @@ async function main() {
   const swarmA = new Swarm(a);
   const swarmB = new Swarm(b);
 
-  const getInvite = async () => {
-    const { requestId, request, decrypt } = idA.requestInvite(a.id);
+  const { requestId, request, decrypt } = idA.requestInvite(a.id);
 
+  const getInvite = async () => {
     const encryptedInvite = await swarmA.waitForInvite(requestId).promise;
     const invite = decrypt(encryptedInvite);
 
