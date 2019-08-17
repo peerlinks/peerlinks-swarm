@@ -1,0 +1,38 @@
+{
+  "name": "@vowlink/swarm",
+  "version": "1.0.0",
+  "description": "hyperswarm integration for VowLink",
+  "main": "lib/swarm.js",
+  "scripts": {
+    "lint": "eslint lib/**/*.js test/**/*.js",
+    "mocha": "mocha -r esm --reporter=spec test/*-test.js",
+    "test-script": "node -r esm test/swarm.js",
+    "test": "npm run mocha && npm run test-script && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vowlink/vowlink-swarm.git"
+  },
+  "keywords": [
+    "vowlink",
+    "hyperswarm",
+    "p2p"
+  ],
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vowlink/vowlink-swarm/issues"
+  },
+  "homepage": "https://github.com/vowlink/vowlink-swarm#readme",
+  "devDependencies": {
+    "@vowlink/protocol": "^1.0.1-20",
+    "eslint": "^6.1.0",
+    "esm": "^3.2.25",
+    "mocha": "^6.2.0",
+    "stream-pair": "^1.0.3"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "hyperswarm": "^2.0.6"
+  }
+}
