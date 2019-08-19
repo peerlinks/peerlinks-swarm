@@ -33,11 +33,12 @@ async function main() {
     const { encryptedInvite, peerId } =
       idB.issueInvite(channelB, request, 'invitee-name');
 
-    await swarmB.sendInvite({
+    const sent = await swarmB.sendInvite({
       requestId,
       peerId,
       encryptedInvite,
     }).promise;
+    assert.ok(sent);
   };
 
   channelB.waitForIncomingMessage().promise.then((message) => {
