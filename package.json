@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "debug": "^4.1.1",
-    "hyperswarm": "^2.0.6"
+    "hyperswarm": "^2.0.6",
+    "promise-waitlist": "^1.1.0"
   }
 }
