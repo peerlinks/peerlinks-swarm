@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/vowlink/vowlink-swarm#readme",
   "devDependencies": {
-    "@vowlink/protocol": "^1.0.1-20",
-    "eslint": "^6.1.0",
+    "@vowlink/protocol": "^1.0.1",
+    "eslint": "^6.2.0",
     "esm": "^3.2.25",
     "mocha": "^6.2.0",
     "stream-pair": "^1.0.3"
@@ -34,6 +34,6 @@
   "dependencies": {
     "debug": "^4.1.1",
     "hyperswarm": "^2.0.6",
-    "promise-waitlist": "^1.1.0"
+    "promise-waitlist": "^1.2.0"
   }
 }
