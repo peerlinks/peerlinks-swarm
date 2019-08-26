@@ -36,7 +36,6 @@ const { encryptedInvite, peerId } =
   identity.issueInvite(channel, request, 'invitee-name');
 
 await swarm.sendInvite({
-  requestId,
   peerId,
   encryptedInvite,
 }).promise;

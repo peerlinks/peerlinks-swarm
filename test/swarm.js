@@ -25,6 +25,15 @@ async function main() {
     const invite = decrypt(encryptedInvite);
 
     const channelBCopy = await a.channelFromInvite(invite, idA);
+
+    await assert.rejects(channelBCopy.post(Message.json('ohai'), idA), {
+      name: 'Error',
+      message: 'Initial synchronization not complete',
+    });
+
+    // Get root
+    await channelBCopy.waitForIncomingMessage().promise;
+
     await channelBCopy.post(Message.json('ohai'), idA);
 
     swarmA.joinChannel(channelBCopy);
