@@ -1,6 +1,6 @@
 {
   "name": "@vowlink/swarm",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "hyperswarm integration for VowLink",
   "main": "lib/swarm.js",
   "scripts": {
