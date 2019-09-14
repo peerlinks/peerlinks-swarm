@@ -21,7 +21,7 @@ Request invite:
 const { requestId, request, decrypt } =
   identity.requestInvite(vowLink.id);
 
-const encryptedInvite = await swarm.waitForInvite(requestId).promise;
+const encryptedInvite = await swarm.waitForInvite(requestId);
 const invite = decrypt(encryptedInvite);
 
 const channel = await vowLink.channelFromInvite(invite, identity);
