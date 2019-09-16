@@ -1,30 +1,30 @@
-# vowlink-swarm
-[![Build Status](https://travis-ci.org/vowlink/vowlink-swarm.svg?branch=master)](http://travis-ci.org/vowlink/vowlink-swarm)
+# peerlinks-swarm
+[![Build Status](https://travis-ci.org/peerlinks/peerlinks-swarm.svg?branch=master)](http://travis-ci.org/peerlinks/peerlinks-swarm)
 
-Integration of [VowLink][] protocol with [hyperswarm][].
+Integration of [PeerLinks][] protocol with [hyperswarm][].
 
 ## Usage
 
 ```js
-import VowLink, { Message } from '@vowlink/protocol';
-import Swarm from '@vowlink/swar,';
+import PeerLinks, { Message } from '@peerlinks/protocol';
+import Swarm from '@peerlinks/swarm';
 
-// Initialize VowLink
-const vowLink = new VowLink({ /* ... */ });
-await vowlink.open();
+// Initialize PeerLinks
+const peerLinks = new PeerLinks({ /* ... */ });
+await peerLinks.open();
 
-const swarm = new Swarm(vowLink);
+const swarm = new Swarm(peerLinks);
 ```
 
 Request invite:
 ```js
 const { requestId, request, decrypt } =
-  identity.requestInvite(vowLink.id);
+  identity.requestInvite(peerLinks.id);
 
 const encryptedInvite = await swarm.waitForInvite(requestId);
 const invite = decrypt(encryptedInvite);
 
-const channel = await vowLink.channelFromInvite(invite, identity);
+const channel = await peerLinks.channelFromInvite(invite, identity);
 await channel.post(Message.json('test'), identity);
 
 swarm.joinChannel(channel);
@@ -72,5 +72,5 @@ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[VowLink]: https://github.com/vowlink/vowlink
+[PeerLinks]: https://github.com/peerlinks/peerlinks
 [hyperswarm]: https://github.com/hyperswarm/hyperswarm

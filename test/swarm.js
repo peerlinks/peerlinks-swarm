@@ -1,13 +1,13 @@
 /* eslint-env node, mocha */
 import * as assert from 'assert';
 import * as sodium from 'sodium-universal';
-import VowLink, { Message } from '@vowlink/protocol';
+import PeerLinks, { Message } from '@peerlinks/protocol';
 
 import Swarm from '../';
 
 async function main() {
-  const a = new VowLink({ sodium });
-  const b = new VowLink({ sodium });
+  const a = new PeerLinks({ sodium });
+  const b = new PeerLinks({ sodium });
 
   await a.load();
   await b.load();

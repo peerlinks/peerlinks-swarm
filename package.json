@@ -1,7 +1,7 @@
 {
-  "name": "@vowlink/swarm",
+  "name": "@peerlinks/swarm",
   "version": "2.2.0",
-  "description": "hyperswarm integration for VowLink",
+  "description": "hyperswarm integration for PeerLinks",
   "main": "lib/swarm.js",
   "scripts": {
     "lint": "eslint lib/**/*.js test/**/*.js",
@@ -11,21 +11,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/vowlink/vowlink-swarm.git"
+    "url": "git+ssh://git@github.com/peerlinks/peerlinks-swarm.git"
   },
   "keywords": [
-    "vowlink",
+    "peerlinks",
     "hyperswarm",
     "p2p"
   ],
   "author": "Fedor Indutny <fedor@indutny.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vowlink/vowlink-swarm/issues"
+    "url": "https://github.com/peerlinks/peerlinks-swarm/issues"
   },
-  "homepage": "https://github.com/vowlink/vowlink-swarm#readme",
+  "homepage": "https://github.com/peerlinks/peerlinks-swarm#readme",
   "devDependencies": {
-    "@vowlink/protocol": "^4.1.0",
+    "@peerlinks/protocol": "^6.0.0",
     "eslint": "^6.4.0",
     "esm": "^3.2.25",
     "mocha": "^6.2.0",
