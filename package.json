@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/peerlinks/peerlinks-swarm#readme",
   "devDependencies": {
-    "@peerlinks/protocol": "^7.1.0",
-    "eslint": "^6.4.0",
+    "@peerlinks/protocol": "^7.3.1",
+    "eslint": "^6.5.0",
     "esm": "^3.2.25",
-    "mocha": "^6.2.0",
+    "mocha": "^6.2.1",
     "sodium-universal": "^2.0.0",
     "stream-pair": "^1.0.3"
   },
