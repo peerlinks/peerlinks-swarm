@@ -2,7 +2,6 @@
   "name": "@peerlinks/swarm",
   "version": "3.0.2",
   "description": "hyperswarm integration for PeerLinks",
-  "type": "module",
   "main": "lib/swarm.js",
   "scripts": {
     "lint": "eslint lib/**/*.js test/**/*.js",
