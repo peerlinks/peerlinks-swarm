@@ -1,6 +1,6 @@
 {
   "name": "@peerlinks/swarm",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "hyperswarm integration for PeerLinks",
   "main": "lib/swarm.js",
   "scripts": {
