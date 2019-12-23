@@ -27,7 +27,7 @@
   "homepage": "https://github.com/peerlinks/peerlinks-swarm#readme",
   "devDependencies": {
     "@peerlinks/protocol": "^7.4.1",
-    "eslint": "^6.6.0",
+    "eslint": "^6.8.0",
     "esm": "^3.2.25",
     "mocha": "^6.2.2",
     "sodium-universal": "^2.0.0",
@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "debug": "^4.1.1",
-    "hyperswarm": "^2.2.1",
+    "hyperswarm": "^2.4.0",
     "promise-waitlist": "^1.5.0"
   }
 }
