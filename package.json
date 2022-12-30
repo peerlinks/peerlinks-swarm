@@ -29,7 +29,7 @@
     "@peerlinks/protocol": "^7.4.4",
     "eslint": "^6.8.0",
     "esm": "^3.2.25",
-    "mocha": "^6.2.3",
+    "mocha": "^10.2.0",
     "sodium-universal": "^2.0.0",
     "stream-pair": "^1.0.3"
   },
